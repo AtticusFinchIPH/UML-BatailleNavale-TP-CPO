@@ -7,42 +7,6 @@
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
   </packageImport>
   <packagedElement xmi:type="uml:Package" xmi:id="__lPDAAUiEemujYr0b34XHA" name="s">
-    <packagedElement xmi:type="uml:Class" xmi:id="_GvRAwAUjEemujYr0b34XHA" name="Joueur" visibility="public" isAbstract="true">
-      <ownedAttribute xmi:id="_AYk5kAUlEemujYr0b34XHA" name="id" visibility="private">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AYk5kQUlEemujYr0b34XHA" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AYk5kgUlEemujYr0b34XHA" value="1"/>
-      </ownedAttribute>
-      <ownedOperation xmi:id="_HGWD0Br3Eem8vbwciOuTkA" name="Joueur">
-        <ownedParameter xmi:id="_LDB70Br3Eem8vbwciOuTkA" name="id">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </ownedParameter>
-      </ownedOperation>
-      <ownedOperation xmi:id="_LnkMQBr3Eem8vbwciOuTkA" name="getId">
-        <ownedParameter xmi:id="_OdeCYBr3Eem8vbwciOuTkA" direction="return">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </ownedParameter>
-      </ownedOperation>
-      <ownedOperation xmi:id="_PSUmwBr3Eem8vbwciOuTkA" name="getGrilleMemoire">
-        <ownedParameter xmi:id="_TywFABr3Eem8vbwciOuTkA" type="_mbZl4AUkEemujYr0b34XHA" direction="return"/>
-      </ownedOperation>
-      <ownedOperation xmi:id="_WMTWUBr3Eem8vbwciOuTkA" name="getGrillePlecement">
-        <ownedParameter xmi:id="_dhA6EBr3Eem8vbwciOuTkA" type="_mbZl4AUkEemujYr0b34XHA" direction="return"/>
-      </ownedOperation>
-      <ownedOperation xmi:id="_bK5-UBr3Eem8vbwciOuTkA" name="toString">
-        <ownedParameter xmi:id="_euojwBr3Eem8vbwciOuTkA" direction="return">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </ownedParameter>
-      </ownedOperation>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_dAXO0AUkEemujYr0b34XHA" name="Humain" visibility="public">
-      <generalization xmi:id="_ga2YsAUkEemujYr0b34XHA" general="_GvRAwAUjEemujYr0b34XHA"/>
-      <ownedOperation xmi:id="_hwXPYBr3Eem8vbwciOuTkA" name="Humain"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_eehO4AUkEemujYr0b34XHA" name="Ordinateur" visibility="public">
-      <generalization xmi:id="_g-obMAUkEemujYr0b34XHA" general="_GvRAwAUjEemujYr0b34XHA"/>
-      <ownedOperation xmi:id="_jEYcABr3Eem8vbwciOuTkA" name="Ordinateur"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_cDBAUAUlEemujYr0b34XHA" name="magrille" memberEnd="_cDBAUQUlEemujYr0b34XHA _cDBnYQUlEemujYr0b34XHA" navigableOwnedEnd="_cDBAUQUlEemujYr0b34XHA">
       <ownedEnd xmi:id="_cDBAUQUlEemujYr0b34XHA" name="grille" type="_mbZl4AUkEemujYr0b34XHA" association="_cDBAUAUlEemujYr0b34XHA">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cDBAUgUlEemujYr0b34XHA" value="1"/>
@@ -194,6 +158,7 @@
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y0lNdgVCEemujYr0b34XHA" value="1"/>
         </ownedEnd>
       </packagedElement>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_s1Bz8BzqEem_edd7hHop9w" name="INavire" visibility="public"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_5yGMcAUyEemujYr0b34XHA" name="automateNavire">
       <packagedElement xmi:type="uml:Interface" xmi:id="_8oSWcAUyEemujYr0b34XHA" name="IGestionEtatNavire" visibility="public">
@@ -602,6 +567,44 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QPo6FRF0Eem5-Mm5KC8w8g" value="2"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QPo6FhF0Eem5-Mm5KC8w8g" value="2"/>
       </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_T21GcBzpEem_edd7hHop9w" name="joueur">
+      <packagedElement xmi:type="uml:Class" xmi:id="_eehO4AUkEemujYr0b34XHA" name="Ordinateur" visibility="public">
+        <generalization xmi:id="_g-obMAUkEemujYr0b34XHA" general="_GvRAwAUjEemujYr0b34XHA"/>
+        <ownedOperation xmi:id="_jEYcABr3Eem8vbwciOuTkA" name="Ordinateur"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_GvRAwAUjEemujYr0b34XHA" name="AbsJoueur" visibility="public" isAbstract="true">
+        <ownedAttribute xmi:id="_AYk5kAUlEemujYr0b34XHA" name="id" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AYk5kQUlEemujYr0b34XHA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AYk5kgUlEemujYr0b34XHA" value="1"/>
+        </ownedAttribute>
+        <ownedOperation xmi:id="_HGWD0Br3Eem8vbwciOuTkA" name="Joueur">
+          <ownedParameter xmi:id="_LDB70Br3Eem8vbwciOuTkA" name="id">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_LnkMQBr3Eem8vbwciOuTkA" name="getId">
+          <ownedParameter xmi:id="_OdeCYBr3Eem8vbwciOuTkA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_PSUmwBr3Eem8vbwciOuTkA" name="getGrilleMemoire">
+          <ownedParameter xmi:id="_TywFABr3Eem8vbwciOuTkA" type="_mbZl4AUkEemujYr0b34XHA" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_WMTWUBr3Eem8vbwciOuTkA" name="getGrillePlecement">
+          <ownedParameter xmi:id="_dhA6EBr3Eem8vbwciOuTkA" type="_mbZl4AUkEemujYr0b34XHA" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bK5-UBr3Eem8vbwciOuTkA" name="toString">
+          <ownedParameter xmi:id="_euojwBr3Eem8vbwciOuTkA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_dAXO0AUkEemujYr0b34XHA" name="Humain" visibility="public">
+        <generalization xmi:id="_ga2YsAUkEemujYr0b34XHA" general="_GvRAwAUjEemujYr0b34XHA"/>
+        <ownedOperation xmi:id="_hwXPYBr3Eem8vbwciOuTkA" name="Humain"/>
+      </packagedElement>
     </packagedElement>
   </packagedElement>
 </uml:Model>
